@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/1846/1846924.svg?token=exp=1612825968~hmac=8bef5c853cc4db8039557b9d90669bdc">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <title>Pesquisa de Livros</title>
+</head>
+<body>
+    <header>
+    <div id="div01">
+    <select id="selector">
+        <option value="search" selected>Busca Geral</option>
+        <option value="intitle">Busca Por Nome</option>
+        <option value="inauthor">Busca por Autor</option>
+        <option value="Titulo">Busca Por Título</option>
+        <option value="inpublisher">Busca por Publicadora</option>
+    </select>
+    <input type="text" name="pesquisanome" id="pesquisanome" placeholder="Pesquise aqui...">
+    <button onclick="loadlivros()" id="botaopesquisar"></button>
+    </div>
+    </header>
+
+    <div id="resultadocont"></div>
+    <div id="loading"></div>
+
+    <div class="resultado">
+        <div id="conteudo">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
